@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sed-demo"
+version = "0.1.0"
+description = ""
+authors = ["Ming Cheuk <ming.cheuk@spark64.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.8"
+panns-inference = "^0.0.7"
+gradio = "^3.3"
+plotly = "^5.10.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.15.2"
+black = {version = "^22.3.0", allow-prereleases = true}
+ipywidgets = "^8.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+sed_demo = "sed_demo.app:start"

@@ -1,0 +1,5 @@
+.vscode
+*.wav
+__pycache__
+dist
+docker-compose.yml
